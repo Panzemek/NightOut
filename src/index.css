@@ -1,13 +1,127 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  border: none;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapperdiv {
+  justify-content: center;
+}
+
+.basediv {
+  width: 414px;
+  height: 896px;
+  outline-color: black;
+  background-color: aquamarine;
+  flex-direction: column;
+}
+
+.tabContainer {
+  margin: 0;
+  border: 0;
+}
+
+.inOutTab {
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+}
+
+.tabImage {
+  max-width: 10%;
+  height: auto;
+}
+
+.inactive {
+  filter: 100%;
+  background-color: gray;
+}
+
+.widgetContainer {
+  width: 100%;
+  height: 5%;
+  background-color: beige;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.widget {
+  background-color: beige;
+  border: none;
+  outline: none;
+}
+
+.widgetIcon {
+  height: 30px;
+}
+
+.carouselContainer {
+  flex-direction: column;
+}
+
+.carouselComponent .carouselResult {
+  width: 414px;
+  height: 303px;
+}
+
+.mapContainer {
+  width: 414px;
+  height: 606px;
+}
+
+.calendarContainerInternal {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.calendarContainerExternal {
+  position: absolute;
+  z-index: 1;
+}
+
+.placeholder {
+  background-image: url("./images/events/ballet.jpg");
+  height: 303px;
+}
+
+.d-block {
+  height: 303px;
+}
+
+.resultsDiv {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.lockButton {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lockIcon {
+  height: 15px;
+}
+
+.noDisplay {
+  display: none;
 }
